@@ -79,8 +79,8 @@ body {
   transform: scale(1.5); 
 }
 .homeimage {
-  background-image: url('https://themewagon.github.io/feane/images/hero-bg.jpg');
+  background-image: url('https://t4.ftcdn.net/jpg/09/06/77/47/360_F_906774770_CFFDdIKYXksggjOXhLxAk48ZRIGCMl2X.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 90vh;
 }
