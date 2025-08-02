@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+.nav {
+  background-color: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo h2 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2rem;
+  color: orange;
+}
+
+.bookmarks {
+  display: flex;
+  gap: 2rem;
+}
+
+.bookmarks a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+
+.bookmarks a:hover {
+  color: orange;
+  transform: scale(1.1); 
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.order-btn {
+  background-color: #ffc107;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #f9f9f8;
+}
+.icon {
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  color: #ffc107;  
+  transform: scale(1.5); 
+}
+
