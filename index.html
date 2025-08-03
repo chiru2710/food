@@ -4,22 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Restaurant</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-  />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-   <!--fonts links-->
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <!--Nav Bar-->
   <header>
     <nav class="nav">
@@ -42,44 +43,47 @@
       </div>
     </nav>
   </header>
-  <main>
-  <!--Home's Background image-->
-  <div class="homeimage" id="home">
-  </div>
-  <br><br><br><br><br>
-  <!-- Biryani offer's card-->
-  <div class="offers-container">
-    <div class="offer-card">
-      <div class="image-circle">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwAUyEXxEJgAAcxlWPHBdTmsGfV2IexYJC2w&s" alt="Thursdays Biryani">
-      </div>
-      <div class="content">
-        <h3>Tasty Thursdays</h3>
-        <p class="discount">20% <span>off</span></p>
-        <button class="order-btn">
-          Order Now <i class="fas fa-shopping-cart"></i>
-        </button>
-      </div>
-    </div>
 
-    <div class="offer-card">
-      <div class="image-circle">
-        <img src="https://t4.ftcdn.net/jpg/04/36/36/57/360_F_436365754_z3i5Es0sFmZuLY6GZIzdiU01v9HqpGZe.jpg" alt="Biryani">
+  <main>
+    <!--Home's Background image-->
+    <div class="homeimage" id="home"></div>
+
+    <!-- Offers Section -->
+    <section class="offers-container section-spacing">
+      <div class="offer-card">
+        <div class="image-circle">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwAUyEXxEJgAAcxlWPHBdTmsGfV2IexYJC2w&s" alt="Thursdays Biryani">
+        </div>
+        <div class="content">
+          <h3>Tasty Thursdays</h3>
+          <p class="discount">20% <span>off</span></p>
+          <button class="order-btn">
+            Order Now <i class="bi bi-cart-fill"></i>
+          </button>
+        </div>
       </div>
-      <div class="content">
-        <h3>Biryani Blast</h3>
-        <p class="discount">15% <span>off</span></p>
-        <button class="order-btn">
-          Order Now <i class="fas fa-shopping-cart"></i>
-        </button>
+
+      <div class="offer-card">
+        <div class="image-circle">
+          <img src="https://t4.ftcdn.net/jpg/04/36/36/57/360_F_436365754_z3i5Es0sFmZuLY6GZIzdiU01v9HqpGZe.jpg" alt="Biryani">
+        </div>
+        <div class="content">
+          <h3>Biryani Blast</h3>
+          <p class="discount">15% <span>off</span></p>
+          <button class="order-btn">
+            Order Now <i class="bi bi-cart-fill"></i>
+          </button>
+        </div>
       </div>
+    </section>
+
+    <!-- Menu Section -->
+    <div class="menu" id="menu">
+      <h1>MENU</h1>
+      
+  
     </div>
-  </div>
-  <br><br><br><br>
-  <!--Menu Card-->
-  <div class="menu" id="menu">
-    <h1>MENU</h1>
-  </div>
   </main>
+
 </body>
 </html>

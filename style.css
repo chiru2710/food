@@ -6,22 +6,28 @@
 
 body {
   font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+  font-size: 1rem; /* Base size = 16px */
 }
 
+/* NAVBAR */
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: #111;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  line-height: inherit;
   white-space: nowrap;
 }
 
 .logo h2 {
   font-family: 'Brush Script MT', cursive;
-  font-size: 2rem;
+  font-size: 2rem; /* 32px */
   color: orange;
 }
 
@@ -40,7 +46,7 @@ body {
 
 .bookmarks a:hover {
   color: orange;
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .right-section {
@@ -53,43 +59,50 @@ body {
   font-size: 1.2rem;
   color: white;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+.icon:hover {
+  color: #ffc107;
+  transform: scale(1.5);
+}
+
+/* BUTTON STYLE */
 .order-btn {
   background-color: #ffc107;
   border: none;
   padding: 0.5rem 1.2rem;
-  border-radius: 25px;
+  border-radius: 1.5rem;
   font-weight: bold;
   cursor: pointer;
   color: black;
   transition: 0.3s ease;
+  font-size: 1rem;
 }
 
 .order-btn:hover {
   background-color: #f9f9f8;
 }
-.icon {
-  font-size: 1.2rem;
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
 
-.icon:hover {
-  color: #ffc107;  
-  transform: scale(1.5); 
-}
+/* HOME IMAGE */
 .homeimage {
   background-image: url('https://t4.ftcdn.net/jpg/09/06/77/47/360_F_906774770_CFFDdIKYXksggjOXhLxAk48ZRIGCMl2X.jpg');
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
+  
 }
+
+/* SECTION SPACING */
+.section-spacing {
+  padding-top: 7rem;
+}
+
+/* OFFER CARDS */
 .offers-container {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 5rem;
   flex-wrap: wrap;
 }
 
@@ -99,21 +112,20 @@ body {
   display: flex;
   align-items: center;
   padding: 2rem;
-  border-radius: 10px;
-  width: 500px;
+  border-radius: 0.625rem;
+  width: 31.25rem; /* 500px */
   gap: 1.5rem;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 0.3125rem 0.9375rem rgba(0,0,0,0.1); /* 5px 15px */
 }
 
 .image-circle {
   flex-shrink: 0;
-  width: 160px;
-  height: 160px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   overflow: hidden;
-  border: 5px solid #f6b221;
+  border: 0.3125rem solid #f6b221;
 }
-
 
 .image-circle img {
   width: 100%;
@@ -139,31 +151,24 @@ body {
   margin-left: 0.2rem;
 }
 
-.order-btn {
-  background-color: #f6b221;
-  color: white;
-  border: none;
-  padding: 0.6rem 1.4rem;
-  border-radius: 2rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
 .order-btn i {
   margin-left: 0.5rem;
 }
 
 .order-btn:hover {
-  background-color: #0e0a02;
+  background-color: #f9f9f8;
   transition: 1s ease;
 }
-.menu h1{
+
+/* MENU SECTION */
+.menu h1 {
   font-size: 5rem;
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: bolder;
   text-align: center;
-  text-decoration: solid;
-  justify-content: center;
+}
+.menu{
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
