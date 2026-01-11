@@ -563,3 +563,80 @@ body {
     background-position: top;
   }
 }
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+}
+
+/* Keep image styling */
+.home-slide {
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Attach gradient directly to carousel */
+#homeCarousel {
+  position: relative;
+}
+
+#homeCarousel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.2)
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Keep hero content above everything */
+.hero-content {
+  position: absolute;
+  z-index: 3;
+}
+
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-btn {
+  padding: 0.8rem 2rem;
+  background: orange;
+  color: black;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: white;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .hero-content h1 { font-size: 3rem; }
+  .hero-content p { font-size: 1rem; }
+}
